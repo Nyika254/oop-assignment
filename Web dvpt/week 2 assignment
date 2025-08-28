@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced HTML5 Form Assignment</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+      background: #f9f9f9;
+    }
+    header, section, footer {
+      margin-bottom: 30px;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    h1, h2 {
+      color: #333;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background: #f0f0f0;
+    }
+    form {
+      display: grid;
+      gap: 15px;
+    }
+    fieldset {
+      border: 1px solid #ccc;
+      padding: 15px;
+      border-radius: 6px;
+    }
+    legend {
+      font-weight: bold;
+    }
+    label {
+      display: block;
+      margin-bottom: 6px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #aaa;
+      border-radius: 4px;
+    }
+    input[type="submit"] {
+      background: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to My Enhanced HTML5 Page</h1>
+    <p>This page demonstrates lists, tables, media, and a complete HTML5 form with validation.</p>
+  </header>
+
+  <section>
+    <h2>Favorite Programming Languages (List Example)</h2>
+    <ul>
+      <li>Python</li>
+      <li>JavaScript</li>
+      <li>Java</li>
+      <li>C++</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Weekly Schedule (Table Example)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Morning</th>
+          <th>Afternoon</th>
+          <th>Evening</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Monday</td>
+          <td>Math Class</td>
+          <td>Project Work</td>
+          <td>Reading</td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+          <td>English Class</td>
+          <td>Team Meeting</td>
+          <td>Coding Practice</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>Sports</td>
+          <td>Research</td>
+          <td>Music Practice</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Media Example</h2>
+    <figure>
+      <img src="https://via.placeholder.com/400x200" alt="Placeholder Image">
+      <figcaption>Sample Image with Caption</figcaption>
+    </figure>
+    <audio controls>
+      <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <br><br>
+    <video width="400" controls>
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <section>
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Maureen Mukami" required minlength="3">
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="maureenmukami531@gmail.com" required autocomplete="email">
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="e.g. 0705818258" pattern="[0-9]{10}" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Account Details</legend>
+        <label for="username">Reen.m:</label>
+        <input type="text" id="username" name="username" required minlength="5" maxlength="15">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="6">
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+          <option value="">--Select Country--</option>
+          <option value="kenya">Kenya</option>
+          <option value="usa">USA</option>
+          <option value="uk">UK</option>
+        </select>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required> <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required> <label for="female">Female</label>
+
+        <label for="bio">Short Bio:</label>
+        <textarea id="bio" name="bio" rows="4" placeholder="Write a little about yourself..."></textarea>
+      </fieldset>
+
+      <input type="submit" value="Submit Form">
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Enhanced HTML5 Assignment. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
